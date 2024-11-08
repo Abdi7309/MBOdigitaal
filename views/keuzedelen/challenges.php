@@ -26,7 +26,6 @@
         <h2 class="text-2xl font-bold dark:text-white">Keuzedelen</h2>
         <div class="w-full">
             <div class="flex flex-col">
-                <!-- Button with dropdown -->
                 <button onclick="toggleDropdown('dropdown1')"
                     class="w-full py-4 text-center font-medium text-gray-700 bg-gray-100 focus:outline-none active:bg-gray-200 rounded-tl-lg rounded-tr-lg">
                     Basis programmeren (Games)
@@ -133,13 +132,10 @@
     </div>
 
     <script>
-        // Function to toggle dropdown visibility
         function toggleDropdown(id) {
             var dropdown = document.getElementById(id);
             dropdown.classList.toggle("show");
         }
-
-        // Close the dropdown if the user clicks outside of it
         window.onclick = function(event) {
             if (!event.target.matches('button')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
